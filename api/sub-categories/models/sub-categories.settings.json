@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_categories",
+  "info": {
+    "name": "SubCategories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "SubcategoryName": {
+      "type": "string"
+    },
+    "items": {
+      "via": "sub_category",
+      "collection": "item"
+    },
+    "main_catergory": {
+      "model": "main-catergory",
+      "via": "sub_categories"
+    },
+    "Discount": {
+      "type": "component",
+      "repeatable": false,
+      "component": "discountmanging.discount"
+    },
+    "managingcats": {
+      "type": "component",
+      "repeatable": false,
+      "component": "managingmicrocategories.microcategories"
+    },
+    "NewArrival": {
+      "type": "component",
+      "repeatable": false,
+      "component": "managing-new-arrival.new-arrival"
+    }
+  }
+}

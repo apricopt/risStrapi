@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_managing_new_arrival_managing_new_arrivals",
+  "info": {
+    "name": "managingNewArrival",
+    "icon": "arrow-circle-up"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "collection": "item"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discounts",
+  "info": {
+    "name": "DiscountClass"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Percent": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

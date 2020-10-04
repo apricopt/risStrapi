@@ -1,0 +1,91 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "SNo": {
+      "type": "string"
+    },
+    "itemcode": {
+      "type": "string"
+    },
+    "vendor": {
+      "model": "vendor",
+      "via": "items"
+    },
+    "color": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "productName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "UOM": {
+      "type": "enumeration",
+      "enum": [
+        "PCS",
+        "ASSEMBLE",
+        "SET"
+      ]
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "sellingPrice": {
+      "type": "integer"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "showroomstock": {
+      "type": "integer"
+    },
+    "arabicDescription": {
+      "type": "text"
+    },
+    "dimensions": {
+      "type": "string"
+    },
+    "other_images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "main_catergory": {
+      "model": "main-catergory",
+      "via": "items"
+    },
+    "sub_category": {
+      "model": "sub-categories",
+      "via": "items"
+    },
+    "productDiscount": {
+      "type": "component",
+      "repeatable": false,
+      "component": "discountmanging.discount"
+    }
+  }
+}

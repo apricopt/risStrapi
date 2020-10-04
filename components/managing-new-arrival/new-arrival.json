@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_managing_new_arrival_new_arrivals",
+  "info": {
+    "name": "NewArrival",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "collection": "item"
+    }
+  }
+}

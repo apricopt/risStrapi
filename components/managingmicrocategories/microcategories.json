@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_managingmicrocategories_microcategories",
+  "info": {
+    "name": "microcategories",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "micro_categories": {
+      "collection": "micro-category"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_catergories",
+  "info": {
+    "name": "MainCatergory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "CategoryName": {
+      "type": "string"
+    },
+    "sub_categories": {
+      "via": "main_catergory",
+      "collection": "sub-categories"
+    },
+    "items": {
+      "via": "main_catergory",
+      "collection": "item"
+    },
+    "micro_categories": {
+      "via": "main_catergory",
+      "collection": "micro-category"
+    }
+  }
+}

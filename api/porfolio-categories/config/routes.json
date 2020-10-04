@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/porfolio-categories",
+      "handler": "porfolio-categories.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/porfolio-categories/count",
+      "handler": "porfolio-categories.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/porfolio-categories/:id",
+      "handler": "porfolio-categories.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/porfolio-categories",
+      "handler": "porfolio-categories.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/porfolio-categories/:id",
+      "handler": "porfolio-categories.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/porfolio-categories/:id",
+      "handler": "porfolio-categories.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

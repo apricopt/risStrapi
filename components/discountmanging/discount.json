@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_discountmanging_discounts",
+  "info": {
+    "name": "Discount",
+    "icon": "american-sign-language-interpreting"
+  },
+  "options": {},
+  "attributes": {
+    "Status": {
+      "type": "boolean"
+    },
+    "Percent": {
+      "type": "integer"
+    },
+    "subcategoryDiscounts": {
+      "model": "discounts"
+    }
+  }
+}

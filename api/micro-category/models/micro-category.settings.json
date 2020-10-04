@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "micro_categories",
+  "info": {
+    "name": "microCategory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "microCategoryName": {
+      "type": "string"
+    },
+    "items": {
+      "collection": "item"
+    },
+    "main_catergory": {
+      "model": "main-catergory",
+      "via": "micro_categories"
+    }
+  }
+}
